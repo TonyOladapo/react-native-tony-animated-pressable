@@ -1,7 +1,11 @@
 
 # React Native Tony Animated Pressable
 
-A custom animated React Native package with an aweful name which implements the React Native Pressable component.
+A custom React Native package with an aweful name which animates onPressIn and onPressOut of the React Native Pressable component.
+
+![screenshot-1](https://github.com/TonyOladapo/react-native-tony-animated-pressable/blob/master/screenshots/1.gif?raw=true | width=100)
+
+![screenshot-2](https://github.com/TonyOladapo/react-native-tony-animated-pressable/blob/master/screenshots/1.gif?raw=true | width=100)
 
 ## Installation
 Run
