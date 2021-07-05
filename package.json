@@ -40,7 +40,5 @@
   "files": [
     "dist/**/*"
   ],
-  "dependencies": {
-    "rn-tony-animated-pressable": "^1.0.0"
-  }
+  "dependencies": {}
 }
