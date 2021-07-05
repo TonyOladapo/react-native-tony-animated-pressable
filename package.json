@@ -1,7 +1,7 @@
 {
   "name": "rn-tony-animated-pressable",
   "version": "1.0.0",
-  "description": "",
+  "description": "A custom animated React Native package with an aweful name which implements the React Native Pressable component.",
   "keywords": [
     "pressable",
     "react-native",
@@ -39,5 +39,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "dependencies": {
+    "rn-tony-animated-pressable": "^1.0.0"
+  }
 }
