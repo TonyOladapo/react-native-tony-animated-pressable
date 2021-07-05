@@ -16,7 +16,8 @@
   ],
   "author": {
     "name": "Tony Obaze",
-    "email": "toneyobaze@gmail.com"
+    "email": "toneyobaze@gmail.com",
+    "url": "https://github.com/TonyOladapo/react-native-tony-animated-pressable"
   },
   "license": "MIT",
   "devDependencies": {
