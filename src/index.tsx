@@ -14,6 +14,7 @@ interface Props extends PressableProps {
   scaleValue?: number;
   friction?: number;
   tension?: number;
+  style?: ViewStyle | ViewStyle[];
 }
 
 const RNTAnimatedPressable = ({
@@ -22,6 +23,7 @@ const RNTAnimatedPressable = ({
   scaleValue,
   friction,
   tension,
+  style,
   ...restProps
 }: Props) => {
   const [scale] = useState(new Animated.Value(1));
@@ -56,7 +58,7 @@ const RNTAnimatedPressable = ({
   return (
     <AnimatedPressable
       {...restProps}
-      style={animatedStyles}
+      style={[animatedStyles, style]}
       onPress={onPress}
       onPressIn={() => shrinkView()}
       onPressOut={() => scaleView()}
