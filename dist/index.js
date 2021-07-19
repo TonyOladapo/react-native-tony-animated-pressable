@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Pressable as RNPressable, Animated, } from "react-native";
 const AnimatedPressable = Animated.createAnimatedComponent(RNPressable);
-const RNTAnimatedPressable = ({ children, onPress, scaleValue, friction, tension, style, ...restProps }) => {
+const RNTAnimatedPressable = ({ children, scaleValue, friction, tension, style, ...restProps }) => {
     const [scale] = useState(new Animated.Value(1));
     const animatedStyles = {
         transform: [
@@ -27,7 +27,7 @@ const RNTAnimatedPressable = ({ children, onPress, scaleValue, friction, tension
             tension: tension ? tension : 40,
         }).start();
     };
-    return (React.createElement(AnimatedPressable, { ...restProps, style: [animatedStyles, style], onPress: onPress, onPressIn: () => shrinkView(), onPressOut: () => scaleView() }, children));
+    return (React.createElement(AnimatedPressable, { ...restProps, style: [animatedStyles, style], onPressIn: () => shrinkView(), onPressOut: () => scaleView() }, children));
 };
 export default RNTAnimatedPressable;
 //# sourceMappingURL=index.js.map
